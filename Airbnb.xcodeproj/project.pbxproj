@@ -13,6 +13,10 @@
 		2ECF57FF2BC48D5900228863 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ECF57FE2BC48D5900228863 /* Preview Assets.xcassets */; };
 		2ECF58132BC733A800228863 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECF58122BC733A800228863 /* ExploreView.swift */; };
 		2ECF58152BC754B500228863 /* ListingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECF58142BC754B500228863 /* ListingItemView.swift */; };
+		2ECF581A2BC75BE200228863 /* listing-4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2ECF58162BC75BE100228863 /* listing-4.jpeg */; };
+		2ECF581B2BC75BE200228863 /* listing-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2ECF58172BC75BE200228863 /* listing-1.jpeg */; };
+		2ECF581C2BC75BE200228863 /* listing-3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2ECF58182BC75BE200228863 /* listing-3.jpeg */; };
+		2ECF581D2BC75BE200228863 /* listing-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2ECF58192BC75BE200228863 /* listing-2.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		2ECF57FE2BC48D5900228863 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2ECF58122BC733A800228863 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		2ECF58142BC754B500228863 /* ListingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingItemView.swift; sourceTree = "<group>"; };
+		2ECF58162BC75BE100228863 /* listing-4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "listing-4.jpeg"; sourceTree = "<group>"; };
+		2ECF58172BC75BE200228863 /* listing-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "listing-1.jpeg"; sourceTree = "<group>"; };
+		2ECF58182BC75BE200228863 /* listing-3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "listing-3.jpeg"; sourceTree = "<group>"; };
+		2ECF58192BC75BE200228863 /* listing-2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "listing-2.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,10 @@
 				2ECF58052BC7319900228863 /* Models */,
 				2ECF580A2BC7322A00228863 /* Utils */,
 				2ECF57FB2BC48D5900228863 /* Assets.xcassets */,
+				2ECF58172BC75BE200228863 /* listing-1.jpeg */,
+				2ECF58192BC75BE200228863 /* listing-2.jpeg */,
+				2ECF58182BC75BE200228863 /* listing-3.jpeg */,
+				2ECF58162BC75BE100228863 /* listing-4.jpeg */,
 				2ECF57F92BC48D5700228863 /* ContentView.swift */,
 				2ECF57FD2BC48D5900228863 /* Preview Content */,
 			);
@@ -229,6 +241,10 @@
 			files = (
 				2ECF57FF2BC48D5900228863 /* Preview Assets.xcassets in Resources */,
 				2ECF57FC2BC48D5900228863 /* Assets.xcassets in Resources */,
+				2ECF581D2BC75BE200228863 /* listing-2.jpeg in Resources */,
+				2ECF581A2BC75BE200228863 /* listing-4.jpeg in Resources */,
+				2ECF581B2BC75BE200228863 /* listing-1.jpeg in Resources */,
+				2ECF581C2BC75BE200228863 /* listing-3.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
