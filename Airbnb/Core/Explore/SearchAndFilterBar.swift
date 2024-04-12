@@ -21,6 +21,12 @@ struct SearchAndFilterBar: View {
                     .font(.caption)
                     .foregroundStyle(.gray)
             }
+        Spacer()
+         
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Image(systemName: "line.3.horizontal.decrease.circle")
+                    .foregroundStyle(.black)
+            })
         }
     }
 }
