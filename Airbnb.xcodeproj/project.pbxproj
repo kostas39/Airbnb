@@ -20,6 +20,7 @@
 		2ECF581F2BC95CE100228863 /* SearchAndFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECF581E2BC95CE100228863 /* SearchAndFilterBar.swift */; };
 		2ECF583B2BCAAA1D00228863 /* ListingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECF583A2BCAAA1D00228863 /* ListingDetailView.swift */; };
 		2ECF583E2BCAAB5400228863 /* ListingImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECF583D2BCAAB5400228863 /* ListingImageCarouselView.swift */; };
+		2ECF58422BCBEB5B00228863 /* my-photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2ECF58412BCBEB5B00228863 /* my-photo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		2ECF581E2BC95CE100228863 /* SearchAndFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAndFilterBar.swift; sourceTree = "<group>"; };
 		2ECF583A2BCAAA1D00228863 /* ListingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailView.swift; sourceTree = "<group>"; };
 		2ECF583D2BCAAB5400228863 /* ListingImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingImageCarouselView.swift; sourceTree = "<group>"; };
+		2ECF58412BCBEB5B00228863 /* my-photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "my-photo.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				2ECF580A2BC7322A00228863 /* Utils */,
 				2ECF57FB2BC48D5900228863 /* Assets.xcassets */,
 				2ECF58172BC75BE200228863 /* listing-1.jpeg */,
+				2ECF58412BCBEB5B00228863 /* my-photo.jpg */,
 				2ECF58192BC75BE200228863 /* listing-2.jpeg */,
 				2ECF58182BC75BE200228863 /* listing-3.jpeg */,
 				2ECF58162BC75BE100228863 /* listing-4.jpeg */,
@@ -258,6 +261,7 @@
 			files = (
 				2ECF57FF2BC48D5900228863 /* Preview Assets.xcassets in Resources */,
 				2ECF57FC2BC48D5900228863 /* Assets.xcassets in Resources */,
+				2ECF58422BCBEB5B00228863 /* my-photo.jpg in Resources */,
 				2ECF581D2BC75BE200228863 /* listing-2.jpeg in Resources */,
 				2ECF581A2BC75BE200228863 /* listing-4.jpeg in Resources */,
 				2ECF581B2BC75BE200228863 /* listing-1.jpeg in Resources */,
