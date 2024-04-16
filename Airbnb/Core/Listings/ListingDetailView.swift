@@ -128,6 +128,26 @@ struct ListingDetailView: View {
             }
             .padding()
             
+            Divider()
+            
+            VStack(spacing: 16) {
+                Text("What this place offers")
+                    .font(.headline)
+                
+                ForEach(0 ..< 5) {feaure in
+                    HStack {
+                        Image(systemName: "wifi")
+                            .frame(width: 32)
+                        
+                        Text("Wifi")
+                            .font(.footnote)
+                        
+                        Spacer()
+                    }
+                }
+            }
+            .padding()
+            
         }
         
     }
