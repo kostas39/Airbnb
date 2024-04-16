@@ -94,10 +94,10 @@ struct ListingDetailView: View {
                                 .font(.caption)
                                 .foregroundStyle(.gray)
                         }
+                        Spacer()
                     }
                 }
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
             .padding()
             
         }
