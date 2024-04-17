@@ -15,10 +15,28 @@ struct ListingDetailView: View {
         "listing-3",
         "listing-4"
     ]
+    
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         ScrollView {
-            ListingImageCarouselView()
-                .frame(height: 320)
+            ZStack(alignment: .topLeading) {
+                ListingImageCarouselView()
+                    .frame(height: 320)
+                
+                Button {
+                    dismiss()
+                } label: {
+                        Image(systemName: "chevron.left")
+                        .foregroundStyle(.black)
+                        .background {
+                            Circle()
+                                .fill(.white)
+                                .frame(width: 32, height: 32)
+                        }
+                        .padding(32)
+                }
+            }
             
             VStack(alignment: .leading, spacing: 8) {
                 Text("Miami Villa")
@@ -164,14 +182,26 @@ struct ListingDetailView: View {
             .padding()
             
         }
+        .ignoresSafeArea()
+        .padding(.bottom, 64)
         .overlay(alignment: .bottom) {
             VStack {
                 Divider()
                     .padding(.bottom)
                 
                 HStack {
-                    VStack {
-                         
+                    VStack(alignment: .leading) {
+                         Text("500£")
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                        
+                        Text("Total before taxes")
+                            .font(.footnote)
+                        
+                        Text("Oct 15 - 20")
+                            .font(.footnote)
+                            .fontWeight(.semibold)
+                            .underline()
                     }
                     
                     Spacer()
