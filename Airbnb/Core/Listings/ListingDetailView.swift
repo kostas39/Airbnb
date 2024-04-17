@@ -164,6 +164,34 @@ struct ListingDetailView: View {
             .padding()
             
         }
+        .overlay(alignment: .bottom) {
+            VStack {
+                Divider()
+                    .padding(.bottom)
+                
+                HStack {
+                    VStack {
+                         
+                    }
+                    
+                    Spacer()
+                    
+                    Button {
+                        
+                    } label: {
+                        Text("Reserve")
+                            .foregroundStyle(.white)
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                            .frame(width: 140, height: 40)
+                            .background(.pink)
+                            .clipShape(RoundedRectangle(cornerRadius: 8))
+                    }
+                }
+                .padding(.horizontal, 32)
+            }
+            .background(.white)
+        }
         
     }
 }
