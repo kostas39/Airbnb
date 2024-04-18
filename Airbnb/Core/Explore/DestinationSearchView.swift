@@ -49,33 +49,38 @@ struct DestinationSearchView: View {
             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             
             //date selection view
-            VStack {
-                HStack {
-                    Text("When")
-                        .foregroundStyle(.gray)
-                    
-                    Spacer()
-                    
-                    Text("Add dates")
-                }
-                .fontWeight(.semibold)
-                .font(.subheadline)
-            }
-            .padding()
-            .background(.white)
-            .clipShape(RoundedRectangle(cornerRadius: 12))
-            .padding()
-            .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-
+            CollapsedPickerView(title: "When", description: "Add dates")
             
             //num guests view
-            VStack {
-                
-            }
+            CollapsedPickerView(title: "Who", description: "Add guests")
         }
     }
 }
 
 #Preview {
     DestinationSearchView(show: .constant(false))
+}
+
+struct CollapsedPickerView: View {
+    let title: String
+    let description: String
+    var body: some View {
+        VStack {
+            HStack {
+                Text(title)
+                    .foregroundStyle(.gray)
+                
+                Spacer()
+                
+                Text(description)
+            }
+            .fontWeight(.semibold)
+            .font(.subheadline)
+        }
+        .padding()
+        .background(.white)
+        .clipShape(RoundedRectangle(cornerRadius: 12))
+        .padding()
+        .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+    }
 }
