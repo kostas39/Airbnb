@@ -43,6 +43,35 @@ struct DestinationSearchView: View {
                 }
             }
             .padding()
+            .background(.white)
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+            .padding()
+            .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+            
+            //date selection view
+            VStack {
+                HStack {
+                    Text("When")
+                        .foregroundStyle(.gray)
+                    
+                    Spacer()
+                    
+                    Text("Add dates")
+                }
+                .fontWeight(.semibold)
+                .font(.subheadline)
+            }
+            .padding()
+            .background(.white)
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+            .padding()
+            .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+
+            
+            //num guests view
+            VStack {
+                
+            }
         }
     }
 }
