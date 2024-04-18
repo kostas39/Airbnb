@@ -12,7 +12,9 @@ struct DestinationSearchView: View {
     var body: some View {
         VStack {
             Button {
-                show.toggle()
+                withAnimation(.snappy) {
+                    show.toggle()
+                }
             }   label: {
                 Image(systemName: "xmark.circle")
                     .imageScale(.large)
