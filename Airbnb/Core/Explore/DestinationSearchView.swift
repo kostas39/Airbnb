@@ -17,6 +17,9 @@ struct DestinationSearchView: View {
     @Binding var show: Bool
     @State private var destination = ""
     @State private var selectedOption: DestinationSearchOptions = .location
+    @State private var startDate = Date()
+    @State private var endDate = Date()
+    @State private var numGuests = 0
     
     var body: some View {
         VStack {
@@ -67,13 +70,23 @@ struct DestinationSearchView: View {
             
             //date selection view
             
-            VStack {
+            VStack(alignment: .leading) {
                 if selectedOption == .dates {
-                    HStack {
-                        Text("show expanded view")
+                  Text("When's your trip?")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                    
+                    VStack {
+                        DatePicker("From", selection: $startDate, displayedComponents: .date)
                         
-                        Spacer()
+                        Divider()
+                        
+                        DatePicker("To", selection: $endDate, displayedComponents: .date)
+
                     }
+                    .foregroundStyle(.gray)
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
 
                 } else {
                     CollapsedPickerView(title: "When", description: "Add dates")
@@ -81,7 +94,7 @@ struct DestinationSearchView: View {
                 }
             }
             .padding()
-            .frame(height: selectedOption == .dates ? 120 : 64)
+            .frame(height: selectedOption == .dates ? 180 : 64)
             .background(.white)
             .clipShape(RoundedRectangle(cornerRadius: 12))
             .padding()
@@ -92,13 +105,22 @@ struct DestinationSearchView: View {
             
             //num guests view
             
-            VStack {
+            VStack(alignment: .leading) {
                 if selectedOption == .guests {
-                    HStack {
-                        Text("show expanded view")
-                        
-                        Spacer()
+                    Text("Who's coming?")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                    
+                    Stepper {
+                        Text("\(numGuests) Adults")
+                    } onIncrement: {
+                        numGuests += 1
+                    } onDecrement: {
+                        guard numGuests > 0 else { return }
+                        numGuests -= 1
                     }
+                    
+                    
                 } else {
                     CollapsedPickerView(title: "Who", description: "Add guests")
 
