@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2EAA489A2BD126A400CF1190 /* DestinationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA48992BD126A400CF1190 /* DestinationSearchView.swift */; };
+		2EAA489C2BD2B7C500CF1190 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA489B2BD2B7C500CF1190 /* ProfileView.swift */; };
 		2ECF57F82BC48D5700228863 /* AirbnbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECF57F72BC48D5700228863 /* AirbnbApp.swift */; };
 		2ECF57FA2BC48D5700228863 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECF57F92BC48D5700228863 /* ContentView.swift */; };
 		2ECF57FC2BC48D5900228863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ECF57FB2BC48D5900228863 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		2EAA48992BD126A400CF1190 /* DestinationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationSearchView.swift; sourceTree = "<group>"; };
+		2EAA489B2BD2B7C500CF1190 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		2ECF57F42BC48D5700228863 /* Airbnb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airbnb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ECF57F72BC48D5700228863 /* AirbnbApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbApp.swift; sourceTree = "<group>"; };
 		2ECF57F92BC48D5700228863 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 		2ECF580F2BC732EE00228863 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				2EAA489B2BD2B7C500CF1190 /* ProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ECF583E2BCAAB5400228863 /* ListingImageCarouselView.swift in Sources */,
+				2EAA489C2BD2B7C500CF1190 /* ProfileView.swift in Sources */,
 				2EAA489A2BD126A400CF1190 /* DestinationSearchView.swift in Sources */,
 				2ECF57FA2BC48D5700228863 /* ContentView.swift in Sources */,
 				2ECF58152BC754B500228863 /* ListingItemView.swift in Sources */,
