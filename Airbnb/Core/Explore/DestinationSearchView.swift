@@ -56,6 +56,7 @@ struct DestinationSearchView: View {
                 }
             }
             .padding()
+            .frame(height: selectedOption == .location ? 120 : 64)
             .background(.white)
             .clipShape(RoundedRectangle(cornerRadius: 12))
             .padding()
@@ -65,18 +66,55 @@ struct DestinationSearchView: View {
             }
             
             //date selection view
-            CollapsedPickerView(title: "When", description: "Add dates")
+            
+            VStack {
+                if selectedOption == .dates {
+                    HStack {
+                        Text("show expanded view")
+                        
+                        Spacer()
+                    }
+
+                } else {
+                    CollapsedPickerView(title: "When", description: "Add dates")
+
+                }
+            }
+            .padding()
+            .frame(height: selectedOption == .dates ? 120 : 64)
+            .background(.white)
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+            .padding()
+            .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                 .onTapGesture {
                     selectedOption = .dates
                 }
             
             //num guests view
-            CollapsedPickerView(title: "Who", description: "Add guests")
+            
+            VStack {
+                if selectedOption == .guests {
+                    HStack {
+                        Text("show expanded view")
+                        
+                        Spacer()
+                    }
+                } else {
+                    CollapsedPickerView(title: "Who", description: "Add guests")
+
+                }
+            }
+            .padding()
+            .frame(height: selectedOption == .guests ? 120 : 64)
+            .background(.white)
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+            .padding()
+            .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                 .onTapGesture {
                     selectedOption = .guests
                 }
+            }
         }
-    }
 }
 
 #Preview {
@@ -99,10 +137,6 @@ struct CollapsedPickerView: View {
             .fontWeight(.semibold)
             .font(.subheadline)
         }
-        .padding()
-        .background(.white)
-        .clipShape(RoundedRectangle(cornerRadius: 12))
-        .padding()
-        .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+
     }
 }
