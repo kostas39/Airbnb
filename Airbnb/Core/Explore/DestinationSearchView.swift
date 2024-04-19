@@ -62,7 +62,7 @@ struct DestinationSearchView: View {
             .padding()
             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             .onTapGesture {
-                selectedOption = .location
+                withAnimation(.snappy) { selectedOption = .location }
             }
             
             //date selection view
@@ -87,7 +87,7 @@ struct DestinationSearchView: View {
             .padding()
             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                 .onTapGesture {
-                    selectedOption = .dates
+                    withAnimation(.snappy) { selectedOption = .dates }
                 }
             
             //num guests view
@@ -111,7 +111,7 @@ struct DestinationSearchView: View {
             .padding()
             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                 .onTapGesture {
-                    selectedOption = .guests
+                    withAnimation(.snappy) { selectedOption = .guests }
                 }
             }
         }
