@@ -23,15 +23,28 @@ struct DestinationSearchView: View {
     
     var body: some View {
         VStack {
-            Button {
-                withAnimation(.snappy) {
-                    show.toggle()
+            HStack {
+                Button {
+                    withAnimation(.snappy) {
+                        show.toggle()
+                    }
+                }   label: {
+                    Image(systemName: "xmark.circle")
+                        .imageScale(.large)
+                        .foregroundStyle(.black)
                 }
-            }   label: {
-                Image(systemName: "xmark.circle")
-                    .imageScale(.large)
-                    .foregroundStyle(.black)
+                
+                Spacer()
+                
+                Button("Clear") {
+                    destination = ""
+                }
+                .foregroundStyle(.black)
+                .font(.subheadline)
+                .fontWeight(.semibold)
             }
+            .padding()
+            
             
             VStack(alignment: .leading) {
                 if selectedOption == .location {
@@ -135,6 +148,7 @@ struct DestinationSearchView: View {
                 .onTapGesture {
                     withAnimation(.snappy) { selectedOption = .guests }
                 }
+            Spacer()
             }
         }
 }
