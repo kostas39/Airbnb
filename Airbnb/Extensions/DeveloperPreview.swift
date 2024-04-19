@@ -8,6 +8,8 @@
 import Foundation
 
 class DeveloperPreview {
+    static let shared = DeveloperPreview()
+    
     var listings: [Listing] = [
         .init(
             id: NSUUID().uuidString,
@@ -111,8 +113,8 @@ class DeveloperPreview {
             longitude: -80.1936,
             imageURLs: ["listing-24", "listing-19", "listing-18", "lisitng-14"],
             address: "124 Main St",
-            city: "Miami",
-            state: "Florida",
+            city: "Los Angeles",
+            state: "California",
             title: "Beatiful Los Angeles home in Hollywood Hills",
             rating: 4.99,
             features: [.selfCheckIn, .superHost],
