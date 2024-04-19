@@ -36,12 +36,14 @@ struct DestinationSearchView: View {
                 
                 Spacer()
                 
-                Button("Clear") {
-                    destination = ""
+                if !destination.isEmpty {
+                    Button("Clear") {
+                        destination = ""
+                    }
+                    .foregroundStyle(.black)
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
                 }
-                .foregroundStyle(.black)
-                .font(.subheadline)
-                .fontWeight(.semibold)
             }
             .padding()
             
