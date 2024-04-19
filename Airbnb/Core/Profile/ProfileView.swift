@@ -44,6 +44,7 @@ struct ProfileView: View {
                 .font(.caption)
             }
             
+            //profile options
             VStack(spacing:24) {
                 ProfileOptionRowView(imageName: "gear", title: "Setting")
                 ProfileOptionRowView(imageName: "gear", title: "Accessibility")
@@ -52,6 +53,7 @@ struct ProfileView: View {
             }
             .padding(.vertical)
         }
+        .padding()
     }
 }
 
