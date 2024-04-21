@@ -185,7 +185,7 @@ struct ListingDetailView: View {
                 
                 HStack {
                     VStack(alignment: .leading) {
-                         Text("500£")
+                        Text("£\(listing.pricePerNight)")
                             .font(.subheadline)
                             .fontWeight(.semibold)
                         
