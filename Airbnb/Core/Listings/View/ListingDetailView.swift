@@ -17,8 +17,7 @@ struct ListingDetailView: View {
         self.listing = listing
         
         let region = MKCoordinateRegion(
-            center: CLLocationCoordinate2D(latitude: 25.7602,
-                                           longitude: -80.1959),
+            center: listing.city == "Los Angeles" ? .losAngeles : .miami,
             span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
         self._cameraPosition = State(initialValue: .region(region))
     }
