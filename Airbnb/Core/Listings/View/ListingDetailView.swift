@@ -52,7 +52,7 @@ struct ListingDetailView: View {
                     
                     .foregroundStyle(.black)
                     
-                    Text("Miami, Florida")
+                    Text("\(listing.city), \(listing.state)")
                 }
                 .font(.caption)
             }
@@ -64,15 +64,15 @@ struct ListingDetailView: View {
             //host info view
             HStack{
                 VStack(alignment: .leading, spacing: 4){
-                    Text("Entire villa hosted by Kostas Koliolios")
+                    Text("Entire \(listing.type.description) hosted by \(listing.ownerName)")
                         .font(.headline)
                         .frame(width: 250, alignment: .leading)
                     
                     HStack(spacing: 2) {
-                        Text("4 guests -")
-                        Text("4 bedrooms -")
-                        Text("4 beds -")
-                        Text("3 baths")
+                        Text("\(listing.numberOfGuests) guests -")
+                        Text("\(listing.numberOfBedrooms) bedrooms -")
+                        Text("\(listing.numberOfBeds) beds -")
+                        Text("\(listing.numberOfBathrooms) baths")
 
                     }
                     .font(.caption)
@@ -221,5 +221,5 @@ struct ListingDetailView: View {
 }
 
 #Preview {
-    ListingDetailView(listing: DeveloperPreview.shared.listings[0])
+    ListingDetailView(listing: DeveloperPreview.shared.listings[3])
 }
