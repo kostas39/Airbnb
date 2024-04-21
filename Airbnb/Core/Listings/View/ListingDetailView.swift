@@ -33,7 +33,7 @@ struct ListingDetailView: View {
             }
             
             VStack(alignment: .leading, spacing: 8) {
-                Text("Miami Villa")
+                Text(listing.title)
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                     .fontWeight(.semibold)
                 VStack(alignment: .leading) {
@@ -41,7 +41,7 @@ struct ListingDetailView: View {
                     HStack(spacing: 2) {
                         Image(systemName: "star.fill")
                         
-                        Text("4.9")
+                        Text("\(listing.rating)")
                         
                         Text(" - ")
                         
