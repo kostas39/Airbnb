@@ -51,7 +51,7 @@ struct ListingDetailView: View {
                     HStack(spacing: 2) {
                         Image(systemName: "star.fill")
                         
-                        Text("\(listing.rating)")
+                        Text(String(format: "%.2f", listing.rating))
                         
                         Text(" - ")
                         
