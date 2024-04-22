@@ -11,6 +11,17 @@ Technologies Used
 - Swift: Primary programming language used for iOS app development.
 - SwiftUI: Declarative framework for building user interfaces.
 - MapKit: Apple's framework for displaying maps and integrating location-based services.
-  
+
+![Simulator Screenshot - iPhone 15 Pro Max - 2024-04-22 at 02 25 21](https://github.com/kostas39/Airbnb/assets/113783564/df8740dc-300e-465e-bcdf-233e3a0ee179)
+
 https://github.com/kostas39/Airbnb/assets/113783564/043e9f89-74d6-4b0e-a9f1-279d19cfd387
+
+Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes. For major updates or feature additions, please open an issue first to discuss potential changes.
+
+
+
+Acknowledgments
+Inspiration and design elements borrowed from the official Airbnb app.
 
