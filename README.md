@@ -12,7 +12,6 @@ Technologies Used
 - SwiftUI: Declarative framework for building user interfaces.
 - MapKit: Apple's framework for displaying maps and integrating location-based services.
 
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-04-22 at 02 25 21](https://github.com/kostas39/Airbnb/assets/113783564/df8740dc-300e-465e-bcdf-233e3a0ee179)
 
 https://github.com/kostas39/Airbnb/assets/113783564/043e9f89-74d6-4b0e-a9f1-279d19cfd387
 
